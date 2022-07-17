@@ -55,7 +55,7 @@ class GameOver extends Phaser.Scene {
     this.backButton.setScale(0.11);
     this.backButton.setInteractive({ cursor: 'pointer' });
     this.backButton.on("pointerup", () => {
-      window.location.replace("../pages/index.html");
+      window.location.replace("../index.html");
     })
   }
   

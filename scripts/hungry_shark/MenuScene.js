@@ -71,7 +71,7 @@ class MenuScene extends Phaser.Scene {
     this.backButton.setScale(0.05, 0.08);
     this.backButton.setInteractive({ cursor: 'pointer' });
     this.backButton.on("pointerup", () => {
-      window.location.replace("../pages/index.html");
+      window.location.replace("../index.html");
     })
   }
 
