@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/leaderboard/leaderboard.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Leaderboard</h1>
+      <div>
+        <ol id="laderboardList"></ol>
+      </div>
+      <div class="buttonGroup">
+        <button class="btn btn-info" onClick="(navigate('index.html'))">
+          Home page
+        </button>
+        <button class="btn btn-info" onClick="(navigate('hungry_shark.html'))">
+          New game
+        </button>
+      </div>
+    </div>
+
+    <!-- Add the Firebase and Cloud Firestore libraries to your app -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-firestore.js"></script>
+
+    <!-- Add Configuration keys -->
+    <script>
+      const firebaseConfig = {
+        apiKey: "AIzaSyATqS7RpbH7PdNA61a6uuGU60_CxZdyCWs",
+        authDomain: "agile-a2de3.firebaseapp.com",
+        projectId: "agile-a2de3",
+        storageBucket: "agile-a2de3.appspot.com",
+        messagingSenderId: "9572520376",
+        appId: "1:9572520376:web:9af49713a39db9d61f3f4d",
+      };
+
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+
+      // Initialize Firestore
+      const db = firebase.firestore();
+
+      function navigate(location) {
+        window.location.href = location;
+      }
+    </script>
+
+    <!-- Main JS file -->
+    <script src="./../scripts/leaderboard.js"></script>
+  </body>
+</html>

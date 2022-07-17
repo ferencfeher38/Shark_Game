@@ -1,0 +1,33 @@
+body {
+    background: url("./../../assets/backgrounds/1_game_background.png");
+    background-size: cover;
+    text-shadow: 2px 2px 10px white;
+}
+
+#main {
+    width: 80vw;
+    margin: 0 auto;
+    background-color: #17a2b8;
+}
+
+#game {
+    width: 80vw;
+}
+
+
+#back {
+    height: 100px;
+    width: 100px;
+}
+
+li{
+    font-size: larger;
+}
+
+.center {
+    text-align: center;
+}
+
+.img {
+    height: 50px;
+}

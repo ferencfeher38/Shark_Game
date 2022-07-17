@@ -1,0 +1,83 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #69a88d;
+}
+
+.joystick {
+    height: 300px;
+    width: 300px;
+    margin: 0 auto;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    font-size: 100px;
+    text-shadow: 2px 2px 4px #000000;
+    font-family: "Bebas Neue", cursive;
+    opacity: 0.8;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #E5E3C9;
+    width: 400px;
+    height: 400px;
+    border-radius: 15px;
+    margin: 30px;
+    color: #525E75;
+    box-shadow: 1px 1px 1px 1px grey;
+    border: 1px solid #E5E3C9;
+}
+
+.card:hover {
+    background-color: #789395;
+    transform: scale(1.03);
+    color: white;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    box-shadow: 3px 3px 3px 3px grey;
+}
+
+.card-image {
+    background-color: aqua;
+    height: 300px;
+    background-size: cover;
+    border-radius: 15px 15px 0 0;
+}
+
+.card h2 {
+    padding: 10px;
+}
+
+.card p {
+    padding: 10px;
+}
+
+.game-1 {
+    background-image: url("./../../assets/gui/hungry_shark.png");
+}
+
+.game-2 {
+    background-image: url("./../../assets/gui/survivor.jpg");
+}
+
+a {
+    text-decoration: none;
+}
